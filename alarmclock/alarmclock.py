@@ -1,5 +1,5 @@
 #Nobel Cs cluB
-import datetime  
+from datetime import datetime  
 from playsound import playsound
 
 
