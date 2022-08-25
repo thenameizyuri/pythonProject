@@ -17,7 +17,7 @@ while True:
     current_time = datetime.now()  #retrieve the current time and store in the variable
     
     #here strftime() method with some exact format string as argument, extract the time as a string from datetime
-    current_hour = current_time.strftime("%H")   
+    current_hour = current_time.strftime("%I")
     current_minute = current_time.strftime("%M") 
     current_seconds = current_time.strftime("%S")
     current_period = current_time.strftime("%p")
