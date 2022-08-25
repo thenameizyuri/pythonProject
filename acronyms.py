@@ -1,4 +1,4 @@
-#Input the string for short form
+#Input the string to get short form
 phrase = str(input("Enter the phrase:\n"))
 
 #it will split the phrase into list for which it is easy to access the first element of the all the element of list using indexing
