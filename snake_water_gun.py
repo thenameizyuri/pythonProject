@@ -1,6 +1,7 @@
 # Nobel CS CluB
-import random
 
+# Nobel CS Club
+import random
 
 def snake_water_gun(robot, you_user):
     if robot == you_user:
