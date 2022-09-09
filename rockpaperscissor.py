@@ -2,36 +2,30 @@
 import random
 
 def rock_paper_scissor(you, computer):
-    if computer == you :
+
+    if computer == you:
         return None
     elif computer == 'Rock':
         if you == 'Paper':
-            you_score =+1
             return True
         elif you == 'Scissor':
-            cpu_score =+1
             return False
     elif computer == 'Paper':
         if you == 'Rock':
-            cpu_score =+1
             return False
         elif you == 'Scissor':
-            you_score =+1
             return True
     elif computer == 'Scissor':
         if you == 'Rock':
-            you_score =+1
             return True
         elif you == 'Paper':
-            cpu_score =+1
             return False
 
 
-
+you_score = 0
+computer_score = 0
+computer = None
 while True:
-    cpu_score = 0
-    you_score = 0
-
     print('Rock, Paper or Scissor ?')
     print('Computer : I choose and its Ur turn :')
     randomNumber = random.randint(1, 3)
@@ -46,7 +40,7 @@ while True:
     you = input("User : \n").capitalize()
     if you == 'End':
         print('Game Scores:\n')
-        print(f'Computer : {cpu_score}')
+        print(f'Computer : {computer_score}')
         print(f'You : {you_score}')
         break
 
@@ -58,6 +52,9 @@ while True:
     if gameWin == None:
         print("The game is Tie \n")
     elif gameWin == True:
+        you_score += 1
         print("You win the game \n")
     else:
+        computer_score += 1
         print('YOu lose the game \n')
+
