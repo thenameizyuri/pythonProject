@@ -1,4 +1,3 @@
-# Nobel CS CluB
 
 # Nobel CS Club
 import random
@@ -22,27 +21,30 @@ def snake_water_gun(robot, you_user):
         elif you_user == 'w':
             return True
 
+while True:
 
-print("Computer choose the option among snake, water and gun\n")
-randomnumber = random.randint(2,4)
+    print("Computer choose the option among snake, water and gun\n")
+    randomnumber = random.randint(2,4)
 
-if randomnumber == 2:
-    robot = 's'
-elif randomnumber == 3:
-    robot = 'w'
-elif randomnumber == 4:
-    robot = 'g'
+    if randomnumber == 2:
+        robot = 's'
+    elif randomnumber == 3:
+        robot = 'w'
+    elif randomnumber == 4:
+        robot = 'g'
 
-you_user= input("Now its your turn : choose 's' for snake and 'w' for water and 'g' for gun\n")
+    you_user= input("Now its your turn : choose 's' for snake and 'w' for water and 'g' for gun\n")
+    if you_user == 'end':
+        break
 
-print('Computer choose '+(robot))
-print('You choose ' + (you_user))
+    print('Computer choose '+(robot))
+    print('You choose ' + (you_user))
 
-bool = snake_water_gun(robot, you_user)
+    bool = snake_water_gun(robot, you_user)
 
-if bool == None:
-    print("The game is Tie")
-elif bool == True:
-    print("you win the game")
-else:
-    print("you lose the game")
+    if bool == None:
+        print("The game is Tie")
+    elif bool == True:
+        print("you win the game")
+    else:
+        print("you lose the game")
