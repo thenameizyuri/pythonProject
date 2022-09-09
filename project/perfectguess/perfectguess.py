@@ -3,7 +3,6 @@ randNumber = random.randint(1,100)
 # print(randNumber)
 userGuess = None
 guesses = 0
-
 while userGuess != randNumber:
     userGuess = int(input('Enter your guess:'))
     guesses+=1
@@ -14,9 +13,7 @@ while userGuess != randNumber:
             print('you guessed it wrong! Enter a smaller Number')
         else:
             print('you guessed it wrong! Enter a greater Number')
-
 print(f'you guessed the number in {guesses} guesses!')
-
 with open('hiscore.txt','r') as f:
     hiscore = int(f.read())
 if guesses<hiscore:
