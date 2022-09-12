@@ -1,2 +1,2 @@
-Increasing number of pythonProject daily to learn something new
+ learning something new
 
