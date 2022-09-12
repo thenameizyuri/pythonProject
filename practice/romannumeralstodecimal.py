@@ -22,5 +22,5 @@ def RomanNumeralToDecimal(romanNumeral):
     sum += tallies[romanNumeral[-1]]
     return sum
 
-a = RomanNumeralToDecimal(input("enter the roman"))
+a = RomanNumeralToDecimal(input("enter the roman").upper())
 print(a)
